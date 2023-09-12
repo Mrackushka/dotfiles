@@ -21,10 +21,13 @@ alias ld='lazydocker'
 
 
 # Python related
-alias py='python3.11'
+alias py='python3.10'
+alias py8='python3.8'
 alias ipy='py -m IPython --TerminalInteractiveShell.editing_mode=vim'
 alias bpy='py -m bpython'
 alias venv="py -m venv venv && source ./venv/bin/activate\
+            && pip install --upgrade pip"
+alias venv8="py8 -m venv venv && source ./venv/bin/activate\
             && pip install --upgrade pip"
 alias jup='jupyter-notebook'
 alias activate='. venv/bin/activate'

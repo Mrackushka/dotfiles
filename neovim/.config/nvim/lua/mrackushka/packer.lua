@@ -81,11 +81,6 @@ return require('packer').startup(function(use)
     }
 
     use {
-        'jackMort/ChatGPT.nvim',
-        requires = { { 'MunifTanjim/nui.nvim' } }
-    }
-
-    use {
         "iamcco/markdown-preview.nvim",
         run = function() vim.fn["mkdp#util#install"]() end,
     }
@@ -95,8 +90,6 @@ return require('packer').startup(function(use)
     end }
 
     --use { 'doums/darcula' }
-    use { 'jose-elias-alvarez/null-ls.nvim' }
-    use { 'jay-babu/mason-null-ls.nvim' }
     use { "briones-gabriel/darcula-solid.nvim", requires = "rktjmp/lush.nvim" }
     use { "ellisonleao/gruvbox.nvim" }
     use { 'folke/tokyonight.nvim' }
@@ -105,26 +98,18 @@ return require('packer').startup(function(use)
     use { "bluz71/vim-moonfly-colors", as = "moonfly" }
     use { "savq/melange-nvim" }
     use { 'luisiacc/gruvbox-baby', branch = 'main' }
+
+    use { 'jose-elias-alvarez/null-ls.nvim' }
+    use { 'jay-babu/mason-null-ls.nvim' }
     use { 'https://github.com/ap/vim-css-color' }
     use { 'preservim/nerdcommenter' }
     use { 'https://github.com/preservim/tagbar' }
     use { 'https://github.com/Pocco81/auto-save.nvim.git' }
-    use { 'mg979/vim-visual-multi', branch = 'master' }
     use { 'nvim-tree/nvim-tree.lua' }
-    use { 'ThePrimeagen/vim-be-good' }
     use { 'eandrju/cellular-automaton.nvim' }
     use { 'nvim-treesitter/nvim-treesitter-context' }
-    use { 'tpope/vim-fugitive' }
     use { 'rafamadriz/friendly-snippets' }
     use { "folke/zen-mode.nvim" }
-
-    use {
-        "gaoDean/autolist.nvim",
-        ft = {
-            "text",
-            "markdown",
-        }
-    }
 
 
 
